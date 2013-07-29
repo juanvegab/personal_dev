@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Foundation Test</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/foundation.min.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<script src="js/vendor/custom.modernizr.js"></script>
+	</head>
+	<body>
+		<div id="DIVwrapper">
+			<header class="row">
+				<div class="large-12 columns">
+					<h1>ARS Rescue Rooter</h1>
+				</div>
+			</header>
+			<div id="DIVcontent" class="row">
+				<sidebar class="large-3 columns" >
+					<ul class="side-nav">
+						<li><a href="#">Air Conditioning</a></li>
+						<li><a href="#">Heating</a></li>
+						<li><a href="#">Indoor Air Quality</a></li>
+						<li><a href="#">Plumbing</a></li>
+						<li><a href="#">Sewer & Drain</a></li>
+						<li><a href="#">Insulation</a></li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+					<img src="img/logo.png" alt="logo" />
+				</sidebar>
+				<div id="DIVpageWrapper" class="large-9 columns">
+					<div id="DIVtitleNav" class="row">
+						<h2>Air Conditioning</h2>
+						<ul class="inline-list">
+							<li><a href="">Repairs</a></li>
+							<li><a href="">Service</a></li>
+							<li><a href="">Components</a></li>
+							<li><a href="">Systems</a></li>
+							<li><a href="">Installation</a></li>
+							<li><a href="">Money-Savings Tips</a></li>
+							<li><a href="">FAQs</a></li>
+						</ul>
+					</div>
+					<div id="DIVcontent" class="row">
+						<div id="DIVservices" class="large-8 columns">
+							<h3>Air Conditioning - Service</h3>
+							<p>Like any mechanical system, having your system routinely serviced will pay dividends in the long run.</p>
+							<div id="DIVsections" class="section-container [tabs, vertical-nav] accordion">
+								<section class="section active"> 
+									<h5 class="title"><a href="">Filters</a></h5>
+									<div class="content">
+										<p>Keeping the dust and dirt out is critical to your system’s ability to work effectively.</p>
+										<p>Clean filters allow your air conditioner to run more efficiently, which can save you money on energy bills and help you avoid a costly repair or replacement. Plus, a clean filter promotes a healthier living environment by improving your home’s air quality.</p>
+										<p>You’ll want to replace your air conditioning filters or clean reusable filters at least four times a year and as often as every month. Remember, with AC filters you get what you pay for; so spring for the good ones.</p>
+										<p>To order the right air conditioning filters for your HVAC system, schedule an appointment today or call <a href="tel:866-399-2885">866-399-2885</a>.</p>
+									</div>
+								</section>
+								<section class="section">
+									<h5 class="title"><a href="">Tune-ups</a></h5>
+									<div class="content">
+										<p>Your cooling and heating system is a major investment in comfort. Needless to say, it’s worth it to have your air conditioning system inspected and get an AC tune-up each season to keep your system running right all year round.</p>
+									</div>
+								</section>
+								<section class="section">
+									<h5 class="title"><a href="">Maintenance</a></h5>
+									<div class="content">
+										<p>Regular air conditioner maintenance can pay big dividends in improved system performance and reduced energy costs. It can also help to extend the life of your system parts and equipment, as well as help to prevent costly and inconvenient breakdowns.</p>
+									</div>
+								</section>
+								<section class="section">
+									<h5 class="title"><a href="">Home Services Plans</a></h5>
+									<div class="content">
+										<p>Protect your HVAC investment and make sure your systems stay in top shape year round with the Home Service Plan from ARS® / Rescue Rooter®. It’s the best way to avoid no AC in July, and expensive problems with your air conditioning and heating system.</p>
+									</div>
+								</section>
+								<section class="section">
+									<h5 class="title"><a href="">Commercial</a></h5>
+									<div class="content">
+										<p>We are committed to helping minimize your downtime. Our professional technicians arrive promptly, diagnose the problem quickly and get your problem fixed right the first time. And we're here 24/7 in case of an emergency, including nights, weekends and holidays.</p>
+									</div>
+								</section>
+							</div>
+						</div>
+						<aside class="large-4 columns"></aside>
+					</div>
+				</div>
+			</div>
+			<footer class="row">
+				<ul class="inline-list">
+					<li><a href="#">Request Services</a></li>
+					<li><a href="#">Locations</li>
+					<li><a href="#">Financing Options</a></li>
+					<li><a href="#">Commercial Services</a></li>
+					<li><a href="#">Press Releases</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Careers</li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Site Index</a></li>
+				</ul>
+				<p class="large-12 columns">
+					*Monthly amounts must be paid by credit / debit card or automatic bank withdrawal. Not valid with any other offers or discounts.
+					<br /><br />**Some restrictions apply. See Service Center for details. Customer is responsible for any additional service work provided outside the scope of the Home Service Plan (HSP). The condition of the heating, air conditioning or plumbing systems will be reported at the time of maintenance service, but does not imply any warranties to their performance in the future. Customer may receive notice of schedule for Home Service Plan maintenance services by means of automated phone dialing systems. Service under this Home Service Plan shall continue until terminated by either party upon thirty (30) days prior written notice, provided the Company may discontinue service at any time in the event of non-payment by customer.
+				</p>
+			</footer>
+		</div>
+		<!-- JavaScript -->
+		<script>
+			document.write('<script src=' +
+			('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+			'.js><\/script>')
+		</script> 
+		<script src="js/foundation.min.js"></script> 
+		<script>
+			$(function(){
+				var accordeon = function(){
+					$.each($('.accordion'), function(i, vali){
+						$.each($(vali).find('section'), function(j, valj){
+							$(valj).find('.title>a').click(function(){
+								event.preventDefault();
+								$(this).parent().parent().toggleClass('active');
+							});
+						});
+					});
+				}
+				
+				
+				$(document).foundation();
+				accordeon();
+				
+			});
+		</script>
+	</body>
+</html>

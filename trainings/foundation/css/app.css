@@ -1,0 +1,7 @@
+#DIVwrapper {
+  width: 1000px;
+  margin: 0 auto; }
+  #DIVwrapper header div {
+    background: lightblue; }
+  #DIVwrapper sidebar {
+    background: lightgreen; }
