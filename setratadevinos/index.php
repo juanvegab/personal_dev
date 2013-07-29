@@ -36,7 +36,7 @@
 							while($row=mysql_fetch_array($result)){
 								echo '<a class="productElement" href="producto.php?id='.$row['id'].'">';
 								echo '	<div>';
-								echo '		<img height="240" width="79" src="data:image/jpg/png/gif;base64,'.$row['productImage']. '" alt="'.$row['nombre'].' de '.$row['nombre_bodega'].'" title="'.$row['nombre'].' de '.$row['nombre_bodega'].' - '.$row['tipo'].'" />';
+								echo '		<img  height="240" width="79" src="data:image/jpg/png/gif;base64,'.$row['productImage']. '" alt="'.$row['nombre'].' de '.$row['nombre_bodega'].'" title="'.$row['nombre'].' de '.$row['nombre_bodega'].' - '.$row['tipo'].'" />';
 								echo '		<p class="manufacturerName" title="'.$row['nombre_bodega'].'">'.$row['nombre_bodega'].'</p>';
 								echo '	</div>';
 								echo '	<p> <span title="'.$row['nombre'].'">'.$row['nombre'].'</span> - <span>'.$row['tipo'].'</span></p>';
